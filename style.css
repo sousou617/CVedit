@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url("hover-min.css");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding:  0;
+	outline: none;
+	border:  none;
+}
+
+html {
+	height: 100%;
+	background-image: url('http://i1253.photobucket.com/albums/hh583/cherylrbrown617/EEC55CE9-FD2B-4DB4-9ADD-F8173C2B379D_zps3hmjn45y.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: 'Lato', sans-serif; 
+}
+
+/* Left Nav Sidebar */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    /* z-index: 10000; */
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.7);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+/* Main page */
+.prof-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: grid-template-rows: 30px 1fr;
+	width: 400px;
+	height: 500px;
+	padding: 40px;
+	color: white;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.prof-pic {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+ h1 {
+ 	font-weight: 100;
+ 	letter-spacing: 6;
+ 	font-size: 40px;
+ }
+
+p {
+	font-weight: 200;
+	letter-spacing: 1;
+}
+
+.social-icons, a {
+	font-size: 40px;
+	color: darkorange;
+	text-decoration: none;
+}
+
+
+.social-icons, a {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.social-icons:hover,
+.social-icons:focus,
+.social-icons:active {
+    transform: scale(1.1);
+}
+
+
+
+.line-break {
+	width: 325px;
+	margin: 0 auto;
+	border-top: 1px solid white;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
